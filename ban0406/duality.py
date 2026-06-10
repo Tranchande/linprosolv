@@ -58,7 +58,7 @@ def print_dual_problem(dual_c, dual_A, dual_b, dual_constraint_types, dual_metho
     print("\nVới các ràng buộc:")
     for i in range(len(dual_b)):
         row = [f"{dual_A[i][j]}*y{j+1}" for j in range(len(dual_c))]
-        print(f"  {" + ".join(row)} {dual_constraint_types[i]} {dual_b[i]}")
+        print(f" {' + '.join(row)} {dual_constraint_types[i]} {dual_b[i]}")
         
     # 3. Dấu của biến
     print("\nĐiều kiện biến:")
