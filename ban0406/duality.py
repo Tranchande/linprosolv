@@ -1,6 +1,4 @@
 import copy
-import matplotlib
-matplotlib.use('Agg') 
 import numpy as np
 from fractions import Fraction
 import plotly.graph_objects as go
