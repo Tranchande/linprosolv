@@ -268,8 +268,6 @@
             background: rgba(100, 70, 40, 0.05);
         }
         
-               /* Các đề mục với màu sắc - PHIÊN BẢN NHẠT HƠN */
-                /* Các đề mục với màu sắc - DARK MODE GIỮ ĐẬM, LIGHT MODE NHẠT */
         .log-phase-phase1, .log-phase-phase2, .log-phase-dual, .log-phase-conclusion, .log-phase-theorem {
             color: #ffffff !important;
             font-weight: 700 !important;
@@ -284,81 +282,64 @@
             letter-spacing: 0.3px;
         }
         
-        /* DARK MODE - MÀU ĐẬM (MẶC ĐỊNH) */
         .log-phase-phase1 {
             background: linear-gradient(90deg, #dc2626 0%, #ef4444 50%, #b91c1c 100%) !important;
             border-left-color: #fca5a5 !important;
             box-shadow: 0 2px 8px rgba(220, 38, 38, 0.3);
-            text-shadow: 0 1px 2px rgba(0,0,0,0.2);
         }
         
         .log-phase-phase2 {
             background: linear-gradient(90deg, #2563eb 0%, #3b82f6 50%, #1d4ed8 100%) !important;
             border-left-color: #93c5fd !important;
             box-shadow: 0 2px 8px rgba(37, 99, 235, 0.3);
-            text-shadow: 0 1px 2px rgba(0,0,0,0.2);
         }
         
         .log-phase-dual {
             background: linear-gradient(90deg, #059669 0%, #10b981 50%, #047857 100%) !important;
             border-left-color: #6ee7b7 !important;
             box-shadow: 0 2px 8px rgba(16, 185, 129, 0.3);
-            text-shadow: 0 1px 2px rgba(0,0,0,0.2);
         }
         
         .log-phase-conclusion {
             background: linear-gradient(90deg, #7c3aed 0%, #8b5cf6 50%, #6d28d9 100%) !important;
             border-left-color: #c4b5fd !important;
             box-shadow: 0 2px 8px rgba(124, 58, 237, 0.3);
-            text-shadow: 0 1px 2px rgba(0,0,0,0.2);
         }
         
         .log-phase-theorem {
             background: linear-gradient(90deg, #d97706 0%, #f59e0b 50%, #b45309 100%) !important;
             border-left-color: #fcd34d !important;
             box-shadow: 0 2px 8px rgba(245, 158, 11, 0.3);
-            text-shadow: 0 1px 2px rgba(0,0,0,0.2);
         }
         
-        /* LIGHT MODE - MÀU NHẠT HƠN */
         body.light-mode .log-phase-phase1 {
             background: linear-gradient(90deg, #fee2e2 0%, #fecaca 50%, #fee2e2 100%) !important;
             border-left-color: #f87171 !important;
-            box-shadow: 0 1px 6px rgba(248, 113, 113, 0.15);
             color: #991b1b !important;
-            text-shadow: none;
         }
         
         body.light-mode .log-phase-phase2 {
             background: linear-gradient(90deg, #dbeafe 0%, #bfdbfe 50%, #dbeafe 100%) !important;
             border-left-color: #60a5fa !important;
-            box-shadow: 0 1px 6px rgba(96, 165, 250, 0.15);
             color: #1e40af !important;
-            text-shadow: none;
         }
         
         body.light-mode .log-phase-dual {
             background: linear-gradient(90deg, #d1fae5 0%, #a7f3d0 50%, #d1fae5 100%) !important;
             border-left-color: #34d399 !important;
-            box-shadow: 0 1px 6px rgba(52, 211, 153, 0.15);
             color: #065f46 !important;
-            text-shadow: none;
         }
         
         body.light-mode .log-phase-conclusion {
             background: linear-gradient(90deg, #ede9fe 0%, #ddd6fe 50%, #ede9fe 100%) !important;
             border-left-color: #a78bfa !important;
-            box-shadow: 0 1px 6px rgba(167, 139, 250, 0.15);
             color: #6d28d9 !important;
-            text-shadow: none;
         }
         
         body.light-mode .log-phase-theorem {
             background: linear-gradient(90deg, #fef3c7 0%, #fde68a 50%, #fef3c7 100%) !important;
             border-left-color: #fbbf24 !important;
-            box-shadow: 0 1px 6px rgba(251, 191, 36, 0.15);
             color: #a16207 !important;
-            text-shadow: none;
         }
         
         .log-step {
@@ -375,41 +356,27 @@
             width: auto;
         }
         
-        body.light-mode .log-step {
-            background: rgba(5, 150, 105, 0.1) !important;
-        }
-
         .log-entering {
             color: #34d399 !important;
             font-weight: 800 !important;
             background: rgba(52, 211, 153, 0.08);
             border-left: 3px solid #34d399;
             padding-left: 0.6rem;
-            font-size: 0.9rem;
         }
-        body.light-mode .log-entering {
-            color: #047857 !important;
-            background: rgba(4, 120, 87, 0.1);
-        }
-
+        
         .log-leaving {
             color: #fb923c !important;
             font-weight: 800 !important;
             background: rgba(251, 146, 60, 0.08);
             border-left: 3px solid #fb923c;
             padding-left: 0.6rem;
-            font-size: 0.9rem;
-        }
-        body.light-mode .log-leaving {
-            color: #c2410c !important;
-            background: rgba(194, 65, 12, 0.1);
         }
         
-        .log-warning { color: #f59e0b; font-weight: 700; font-size: 0.9rem; }
-        .log-error { color: #ef4444; font-weight: 800; font-size: 0.9rem; }
-        .log-success { color: #10b981; font-weight: 800; font-size: 0.9rem; }
-        .log-info { color: #06b6d4; font-weight: 700; font-size: 0.9rem; }
-        .log-text { color: var(--text-secondary); font-weight: 500; font-size: 0.9rem; }
+        .log-warning { color: #f59e0b; font-weight: 700; }
+        .log-error { color: #ef4444; font-weight: 800; }
+        .log-success { color: #10b981; font-weight: 800; }
+        .log-info { color: #06b6d4; font-weight: 700; }
+        .log-text { color: var(--text-secondary); font-weight: 500; }
         
         .log-assignment {
             font-family: 'Fira Code', monospace;
@@ -417,17 +384,10 @@
             color: #fbbf24;
             display: inline-block;
             margin-right: 0.3rem;
-            font-size: 0.92rem;
         }
         
         body.light-mode .log-assignment {
             color: #b45309;
-        }
-        
-        sub, .subscript {
-            font-size: 0.85em !important;
-            vertical-align: sub !important;
-            line-height: 1 !important;
         }
         
         #primal-status, #primal-z, #primal-solution { color: var(--res-primal-text); font-weight: 800; }
@@ -473,6 +433,70 @@
         .solve-btn:hover {
             transform: scale(1.02);
             box-shadow: 0 10px 30px -5px rgba(139, 92, 246, 0.4);
+        }
+
+        /* History styles */
+        .history-dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .history-btn {
+            background: rgba(139, 92, 246, 0.15);
+            border: 1px solid rgba(139, 92, 246, 0.3);
+            border-radius: 8px;
+            padding: 0.3rem 0.7rem;
+            font-size: 0.7rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            color: var(--text-primary);
+        }
+        .history-btn:hover {
+            background: rgba(139, 92, 246, 0.3);
+        }
+        .history-menu {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background: var(--log-header-bg);
+            border: 1px solid var(--log-border);
+            border-radius: 12px;
+            min-width: 280px;
+            max-width: 350px;
+            z-index: 100;
+            display: none;
+            box-shadow: 0 10px 25px -5px rgba(0,0,0,0.3);
+            margin-top: 5px;
+        }
+        .history-menu.show {
+            display: block;
+        }
+        .history-item {
+            padding: 0.6rem 0.8rem;
+            border-bottom: 1px solid var(--log-border);
+            cursor: pointer;
+            transition: all 0.15s;
+            font-size: 0.75rem;
+        }
+        .history-item:hover {
+            background: rgba(139, 92, 246, 0.2);
+        }
+        .history-item:last-child {
+            border-bottom: none;
+        }
+        .history-time {
+            font-weight: 700;
+            color: #60a5fa;
+            font-size: 0.7rem;
+        }
+        .history-clear {
+            background: rgba(239, 68, 68, 0.15);
+            color: #ef4444;
+            text-align: center;
+            font-weight: 700;
+        }
+        .history-clear:hover {
+            background: rgba(239, 68, 68, 0.3);
         }
     </style>
 </head>
@@ -618,6 +642,16 @@
                                 <button type="button" id="copy-log-btn" class="log-btn">
                                     <i class="far fa-copy mr-1"></i> Sao chép
                                 </button>
+                                <div class="history-dropdown">
+                                    <button type="button" id="history-btn" class="history-btn">
+                                        <i class="fas fa-history mr-1"></i> Lịch sử (5)
+                                    </button>
+                                    <div id="history-menu" class="history-menu">
+                                        <div class="history-item history-clear" id="clear-history-btn">
+                                            <i class="fas fa-trash-alt mr-1"></i> Xóa toàn bộ lịch sử
+                                        </div>
+                                    </div>
+                                </div>
                                 <button type="button" id="clear-log-btn" class="log-btn">
                                     <i class="fas fa-eraser mr-1"></i> Xóa
                                 </button>
@@ -672,253 +706,149 @@
             div.textContent = text;
             return div.innerHTML;
         }
-
-        // Hàm chuyển đổi subscript - ĐƠN GIẢN, KHÔNG DÙNG PLACEHOLDER
         function convertToSubscript(text) {
-            // Chỉ chuyển đổi cho các biến (x, y, z, w, u, v) theo sau bởi số
-            // Còn các từ khóa như PHA1, BƯỚC LẶP 2 sẽ giữ nguyên vì chữ cái đầu là chữ hoa hoặc có dấu cách
-            
-            // Bước 1: Xử lý biến dạng x1, y2 (chữ thường + số)
-            let result = text.replace(/([a-z])(\d+)/g, function(match, variable, digits) {
-                let subs = '';
-                for (let char of digits) {
-                    const map = { '0':'₀','1':'₁','2':'₂','3':'₃','4':'₄','5':'₅','6':'₆','7':'₇','8':'₈','9':'₉' };
-                    subs += map[char];
-                }
-                return variable + subs;
-            });
-            
-            // Bước 2: Xử lý biến dạng X1, Y2 (chữ in hoa + số) - NHƯNG tránh các từ khóa như PHA1
-            // Chỉ xử lý nếu chữ cái là x,y,z,w,u,v (không xử lý P,H,A,B,L,...)
-            result = result.replace(/([XYZWVU])(\d+)/gi, function(match, variable, digits) {
-                // Nếu variable là X,Y,Z,W,V,U thì chuyển, còn lại giữ nguyên
-                if ('XYZWVU'.includes(variable.toUpperCase())) {
-                    let subs = '';
-                    for (let char of digits) {
-                        const map = { '0':'₀','1':'₁','2':'₂','3':'₃','4':'₄','5':'₅','6':'₆','7':'₇','8':'₈','9':'₉' };
-                        subs += map[char];
-                    }
-                    return variable + subs;
-                }
-                return match;
-            });
-            
-            // Bước 3: Xử lý dạng x_1, y_2
-            result = result.replace(/([a-zA-Z])_(\d+)/g, function(match, variable, digits) {
-                let subs = '';
-                for (let char of digits) {
-                    const map = { '0':'₀','1':'₁','2':'₂','3':'₃','4':'₄','5':'₅','6':'₆','7':'₇','8':'₈','9':'₉' };
-                    subs += map[char];
-                }
-                return variable + subs;
-            });
-            
+            let result = text.replace(/([a-z])(\d+)/g, (m,v,d) => v + [...d].map(c => ({'0':'₀','1':'₁','2':'₂','3':'₃','4':'₄','5':'₅','6':'₆','7':'₇','8':'₈','9':'₉'})[c]).join(''));
+            result = result.replace(/([XYZWVU])(\d+)/gi, (m,v,d) => 'XYZWVU'.includes(v.toUpperCase()) ? v + [...d].map(c => ({'0':'₀','1':'₁','2':'₂','3':'₃','4':'₄','5':'₅','6':'₆','7':'₇','8':'₈','9':'₉'})[c]).join('') : m);
+            result = result.replace(/([a-zA-Z])_(\d+)/g, (m,v,d) => v + [...d].map(c => ({'0':'₀','1':'₁','2':'₂','3':'₃','4':'₄','5':'₅','6':'₆','7':'₇','8':'₈','9':'₉'})[c]).join(''));
             return result;
         }
-        
-        function cleanServerGarbage(text) {
-            text = text.replace(/\s+/g, ' ').trim();
-            text = text.replace(/[=\-_]{3,}/g, '');
-            return text;
-        }
-        
-        function formatAssignmentLine(text) {
-            const match = text.match(/^([a-zA-Z_]+)\s*=\s*(.+)$/);
-            if (match) {
-                const varName = match[1];
-                const value = match[2];
-                const convertedVar = convertToSubscript(varName);
-                const convertedValue = convertToSubscript(value);
-                return `<span class="log-assignment">${convertedVar} = ${escapeHtml(convertedValue)}</span>`;
-            }
-            return null;
-        }
-        
+        function cleanServerGarbage(text) { return text.replace(/\s+/g, ' ').trim().replace(/[=\-_]{3,}/g, ''); }
         function addLogLine(text, type = 'info') {
             text = cleanServerGarbage(text);
-            if (text === '') return;
-
+            if (!text) return;
             const lineDiv = document.createElement('div');
             lineDiv.className = 'log-line';
-            
-            const upperText = text.toUpperCase();
-            
-            // Phân loại đề mục
-            const isPhase1 = upperText.includes('PHA 1') || upperText.includes('PHASE 1') || (upperText.includes('PHA1') && !upperText.includes('TRẠNG THÁI'));
-            const isPhase2 = (upperText.includes('PHA 2') || upperText.includes('PHASE 2') || upperText.includes('PHƯƠNG PHÁP ĐƠN HÌNH')) && !upperText.includes('TRẠNG THÁI');
-            const isDualMethod = (upperText.includes('PHƯƠNG PHÁP ĐỐI NGẪU') || (upperText.includes('ĐỐI NGẪU') && !upperText.includes('TRẠNG THÁI') && !upperText.includes('ĐỊNH LÝ'))) && !upperText.includes('TRẠNG THÁI');
-            const isDualTheorem = upperText.includes('ĐỊNH LÝ ĐỐI NGẪU') || upperText.includes('ÁP DỤNG ĐỊNH LÝ ĐỐI NGẪU');
-            const isConclusion = (upperText.includes('KẾT LUẬN') || upperText.includes('TRẠNG THÁI HỆ BIẾN ĐỔI')) && !upperText.includes('TRẠNG THÁI ĐỐI NGẪU');
-            const isStep = upperText.includes('BƯỚC LẶP') || upperText.includes('TỪ VỰNG') || text.match(/LẶP\s+\d+/i);
-            const isEntering = text.toLowerCase().includes('biến vào') || text.toLowerCase().includes('entering variable');
-            const isLeaving = text.toLowerCase().includes('biến ra') || text.toLowerCase().includes('leaving variable');
+            const upper = text.toUpperCase();
+            const isPhase1 = upper.includes('PHA 1') || upper.includes('PHASE 1') || (upper.includes('PHA1') && !upper.includes('TRẠNG THÁI'));
+            const isPhase2 = (upper.includes('PHA 2') || upper.includes('PHASE 2') || upper.includes('PHƯƠNG PHÁP ĐƠN HÌNH')) && !upper.includes('TRẠNG THÁI');
+            const isDualMethod = (upper.includes('PHƯƠNG PHÁP ĐỐI NGẪU') || (upper.includes('ĐỐI NGẪU') && !upper.includes('TRẠNG THÁI') && !upper.includes('ĐỊNH LÝ'))) && !upper.includes('TRẠNG THÁI');
+            const isDualTheorem = upper.includes('ĐỊNH LÝ ĐỐI NGẪU') || upper.includes('ÁP DỤNG ĐỊNH LÝ ĐỐI NGẪU');
+            const isConclusion = (upper.includes('KẾT LUẬN') || upper.includes('TRẠNG THÁI HỆ BIẾN ĐỔI')) && !upper.includes('TRẠNG THÁI ĐỐI NGẪU');
+            const isStep = upper.includes('BƯỚC LẶP') || upper.includes('TỪ VỰNG') || text.match(/LẶP\s+\d+/i);
+            const isEntering = text.toLowerCase().includes('biến vào');
+            const isLeaving = text.toLowerCase().includes('biến ra');
             const isError = text.includes('LỖI') || text.includes('ERROR') || text.includes('❌');
-            const isWarning = text.includes('⚠️') || text.includes('Cảnh báo');
-            const isSuccess = text.includes('✅') || text.includes('thành công') || (text.includes('Tối ưu') && !text.includes('TRẠNG THÁI'));
-            const isMucTieu = upperText.includes('MỤC TIÊU') || upperText.includes('CHÚ THÍCH ĐỔI BIẾN');
-            const isBoQua = upperText.includes('BỎ QUA PHA') || upperText.includes('CHUYỂN THẲNG SANG PHA');
-            
-            // 4 dòng đặc biệt - để dạng thường
-            const isTrangThaiDoiNgu = text.includes('Trạng thái đối ngẫu:') || text.includes('Trạng thái đối ngẫu');
-            const isDinhLyManh = text.includes('Định lý đối ngẫu mạnh') || text.includes('Định lý đối ngẫu mạnh:');
-            const isNghiemDoiNgu = text.includes('Nghiệm tối ưu đối ngẫu') || text.includes('-> Nghiệm tối ưu đối ngẫu');
-            const isNghiemDuyNhat = text.includes('Nghiệm đối ngẫu là duy nhất') || text.includes('Nghiệm đối ngẫu là duy nhất.');
-            
-            const isSpecialPlainLine = isTrangThaiDoiNgu || isDinhLyManh || isNghiemDoiNgu || isNghiemDuyNhat;
-            
-            // Chuyển đổi subscript
-            const convertedText = convertToSubscript(escapeHtml(text));
-            
-            // 4 dòng đặc biệt
-            if (isSpecialPlainLine) {
-                lineDiv.className = 'log-line log-text';
-                lineDiv.style.fontWeight = 'normal';
-                lineDiv.style.color = 'var(--text-secondary)';
-                lineDiv.style.background = 'transparent';
-                lineDiv.style.borderLeft = '3px solid transparent';
-                lineDiv.innerHTML = convertedText;
-                logContent.appendChild(lineDiv);
-                scrollToBottom();
-                return;
-            }
-            
-            const assignmentHtml = formatAssignmentLine(text);
-            
-            if (isPhase1) {
-                lineDiv.className += ' log-phase-phase1';
-                lineDiv.innerHTML = `<i class="fas fa-skull mr-2"></i>${convertedText}`;
-            }
-            else if (isPhase2) {
-                lineDiv.className += ' log-phase-phase2';
-                lineDiv.innerHTML = `<i class="fas fa-calculator mr-2"></i>${convertedText}`;
-            }
-            else if (isDualMethod) {
-                lineDiv.className += ' log-phase-dual';
-                lineDiv.innerHTML = `<i class="fas fa-exchange-alt mr-2"></i>${convertedText}`;
-            }
-            else if (isDualTheorem) {
-                lineDiv.className += ' log-phase-theorem';
-                lineDiv.innerHTML = `<i class="fas fa-gavel mr-2"></i>${convertedText}`;
-            }
-            else if (isConclusion) {
-                lineDiv.className += ' log-phase-conclusion';
-                lineDiv.innerHTML = `<i class="fas fa-chart-bar mr-2"></i>${convertedText}`;
-            }
-            else if (isMucTieu) {
-                lineDiv.className += ' log-phase-phase2';
-                lineDiv.innerHTML = `<i class="fas fa-bullseye mr-2"></i>${convertedText}`;
-            }
-            else if (isBoQua) {
-                lineDiv.className += ' log-step';
-                lineDiv.innerHTML = `<i class="fas fa-forward mr-2"></i>${convertedText}`;
-            }
-            else if (isStep) {
-                lineDiv.className += ' log-step';
-                lineDiv.innerHTML = `<i class="fas fa-sync-alt fa-spin text-xs mr-2"></i>${convertedText}`;
-            }
-            else if (isEntering) {
-                lineDiv.className += ' log-entering';
-                lineDiv.innerHTML = ` <i class="fas fa-sign-in-alt mr-1"></i> ${convertedText}`;
-            }
-            else if (isLeaving) {
-                lineDiv.className += ' log-leaving';
-                lineDiv.innerHTML = `← <i class="fas fa-sign-out-alt mr-1"></i> ${convertedText}`;
-            }
-            else if (assignmentHtml) {
-                lineDiv.className += ' log-text';
-                const match = text.match(/^([a-zA-Z_]+)\s*=\s*(.+)$/);
-                if(match) {
-                    const convertedVar = convertToSubscript(match[1]);
-                    const convertedValue = convertToSubscript(match[2]);
-                    lineDiv.innerHTML = `<span class="log-assignment">${convertedVar} = ${escapeHtml(convertedValue)}</span>`;
-                } else {
-                    lineDiv.innerHTML = convertedText;
-                }
-            }
-            else if (isError) {
-                lineDiv.className += ' log-error';
-                lineDiv.innerHTML = `❌ ${convertedText}`;
-            }
-            else if (isWarning) {
-                lineDiv.className += ' log-warning';
-                lineDiv.innerHTML = `⚠️ ${convertedText}`;
-            }
-            else if (isSuccess) {
-                lineDiv.className += ' log-success';
-                lineDiv.innerHTML = `✅ ${convertedText}`;
-            }
-            else if (type === 'error') {
-                lineDiv.className += ' log-error';
-                lineDiv.innerHTML = `❌ ${convertedText}`;
-            }
-            else if (type === 'warning') {
-                lineDiv.className += ' log-warning';
-                lineDiv.innerHTML = `⚠️ ${convertedText}`;
-            }
-            else if (type === 'success') {
-                lineDiv.className += ' log-success';
-                lineDiv.innerHTML = `✅ ${convertedText}`;
-            }
-            else {
-                lineDiv.className += ' log-text';
-                lineDiv.innerHTML = convertedText;
-            }
-            
+            const isWarning = text.includes('⚠️');
+            const isSuccess = text.includes('✅') || (text.includes('Tối ưu') && !upper.includes('TRẠNG THÁI'));
+            const converted = convertToSubscript(escapeHtml(text));
+            if (isPhase1) lineDiv.className += ' log-phase-phase1', lineDiv.innerHTML = `<i class="fas fa-skull mr-2"></i>${converted}`;
+            else if (isPhase2) lineDiv.className += ' log-phase-phase2', lineDiv.innerHTML = `<i class="fas fa-calculator mr-2"></i>${converted}`;
+            else if (isDualMethod) lineDiv.className += ' log-phase-dual', lineDiv.innerHTML = `<i class="fas fa-exchange-alt mr-2"></i>${converted}`;
+            else if (isDualTheorem) lineDiv.className += ' log-phase-theorem', lineDiv.innerHTML = `<i class="fas fa-gavel mr-2"></i>${converted}`;
+            else if (isConclusion) lineDiv.className += ' log-phase-conclusion', lineDiv.innerHTML = `<i class="fas fa-chart-bar mr-2"></i>${converted}`;
+            else if (isStep) lineDiv.className += ' log-step', lineDiv.innerHTML = `<i class="fas fa-sync-alt fa-spin text-xs mr-2"></i>${converted}`;
+            else if (isEntering) lineDiv.className += ' log-entering', lineDiv.innerHTML = `<i class="fas fa-sign-in-alt mr-1"></i> ${converted}`;
+            else if (isLeaving) lineDiv.className += ' log-leaving', lineDiv.innerHTML = `← <i class="fas fa-sign-out-alt mr-1"></i> ${converted}`;
+            else if (isError) lineDiv.className += ' log-error', lineDiv.innerHTML = `❌ ${converted}`;
+            else if (isWarning) lineDiv.className += ' log-warning', lineDiv.innerHTML = `⚠️ ${converted}`;
+            else if (isSuccess) lineDiv.className += ' log-success', lineDiv.innerHTML = `✅ ${converted}`;
+            else lineDiv.className += ' log-text', lineDiv.innerHTML = converted;
             logContent.appendChild(lineDiv);
             scrollToBottom();
         }
-        
-        function clearLog() {
-            logContent.innerHTML = '';
-            addLogLine('🟢 Đã xóa log. Nhấn "GIẢI BÀI TOÁN" để chạy lại.', 'info');
-        }
-        
+        function clearLog() { logContent.innerHTML = ''; addLogLine('🟢 Đã xóa log. Nhấn "GIẢI BÀI TOÁN" để chạy lại.', 'info'); }
+        function scrollToBottom() { logContent.scrollTop = logContent.scrollHeight; }
         function copyLog() {
-            const plainText = Array.from(logContent.querySelectorAll('.log-line'))
-                .map(line => line.textContent.trim())
-                .filter(text => text.length > 0)
-                .join('\n');
+            const plain = Array.from(logContent.querySelectorAll('.log-line')).map(l => l.textContent.trim()).filter(t=>t).join('\n');
+            navigator.clipboard.writeText(plain).then(()=>{ const t=document.getElementById('copy-toast'); t.classList.add('show'); setTimeout(()=>t.classList.remove('show'),2000); });
+        }
+        function setRawLogs(raw) { if(!raw) return; raw.split(/\r?\n/).forEach(l=>{ let t=l.trim(); if(t) addLogLine(t); }); }
+        
+        // ========== LỊCH SỬ 5 LẦN ==========
+        const MAX_HISTORY = 5;
+        function getCurrentFormData() {
+            const formData = {};
+            document.querySelectorAll('#solve-form input[name], #solve-form select[name]').forEach(el=>{ if(el.name) formData[el.name]=el.value; });
+            formData.num_vars = document.getElementById('num-vars').value;
+            formData.num_constraints = document.getElementById('num-constraints').value;
+            const dynamic = {};
+            document.querySelectorAll('#objective-container input, #constraints-container input, #variable-signs-container select').forEach(el=>{ if(el.name) dynamic[el.name]=el.value; });
+            formData.dynamicInputs = dynamic;
+            return formData;
+        }
+        function loadFormData(formData) {
+            if(!formData) return;
+            if(formData.num_vars) document.getElementById('num-vars').value = formData.num_vars;
+            if(formData.num_constraints) document.getElementById('num-constraints').value = formData.num_constraints;
+            generateInputForm();
+            setTimeout(()=>{
+                for(let [name,val] of Object.entries(formData)){
+                    if(name!=='dynamicInputs' && name!=='num_vars' && name!=='num_constraints'){
+                        let inp = document.querySelector(`#solve-form [name="${name}"]`);
+                        if(inp) inp.value = val;
+                    }
+                }
+                if(formData.dynamicInputs){
+                    for(let [name,val] of Object.entries(formData.dynamicInputs)){
+                        let inp = document.querySelector(`#solve-form [name="${name}"]`);
+                        if(inp) inp.value = val;
+                    }
+                }
+            },50);
+        }
+        function saveToHistory(problemSummary, resultSummary, status, zValue, formData, fullLogs) {
+            try{
+                let history = JSON.parse(localStorage.getItem('lp_history')||'[]');
+                history.unshift({ id:Date.now(), time:new Date().toLocaleString('vi-VN'), problem:problemSummary, result:resultSummary, status:status, z:zValue, formData:formData, fullLogs:fullLogs ? fullLogs.substring(0,3000) : "" });
+                history = history.slice(0,MAX_HISTORY);
+                localStorage.setItem('lp_history',JSON.stringify(history));
+                renderHistoryList();
+            } catch(e){ if(e.name==='QuotaExceededError'){ localStorage.setItem('lp_history',JSON.stringify([])); renderHistoryList(); } }
+        }
+        function renderHistoryList() {
+            const menu = document.getElementById('history-menu');
+            let history = JSON.parse(localStorage.getItem('lp_history')||'[]');
+            const clearBtn = document.getElementById('clear-history-btn');
+            menu.innerHTML = '';
+            menu.appendChild(clearBtn.cloneNode(true));
+            if(history.length===0){
+                let empty = document.createElement('div');
+                empty.className='history-item'; empty.style.textAlign='center'; empty.innerText='📭 Chưa có lịch sử giải';
+                menu.appendChild(empty);
+            } else {
+                history.forEach(item=>{
+                    let div = document.createElement('div');
+                    div.className='history-item';
+                    div.innerHTML = `<div class="history-time">🕐 ${item.time}</div><div>📊 ${item.status||'Đã giải'} | Z = ${item.z||'?'}</div><div style="font-size:0.65rem;">${item.problem||''}</div>`;
+                    div.onclick = () => loadHistoryItem(item);
+                    menu.appendChild(div);
+                });
+            }
+            let newClear = menu.querySelector('#clear-history-btn');
+            if(newClear) newClear.addEventListener('click',(e)=>{ e.stopPropagation(); clearHistory(); });
+        }
+        function loadHistoryItem(item) {
+            addLogLine(`📜 Đang tải bài toán từ lịch sử (${item.time})...`,'info');
+            if(item.formData) loadFormData(item.formData);
             
-            navigator.clipboard.writeText(plainText).then(() => {
-                const toast = document.getElementById('copy-toast');
-                toast.classList.add('show');
-                setTimeout(() => toast.classList.remove('show'), 2000);
-            }).catch(err => {
-                console.error('Copy failed:', err);
-                addLogLine('❌ Không thể sao chép log vào clipboard', 'error');
-            });
-        }
-        
-        function scrollToBottom() {
-            logContent.scrollTop = logContent.scrollHeight;
-        }
-        
-        function setRawLogs(rawText) {
-            if (!rawText) {
-                addLogLine('✅ Tính toán thành công!', 'success');
-                return;
+            // HIỂN THỊ LẠI LOG CHI TIẾT
+            if(item.fullLogs){
+                clearLog();
+                item.fullLogs.split('\n').forEach(l=>{ if(l.trim()) addLogLine(l); });
             }
-            const lines = rawText.split(/\r?\n/);
-            for (let line of lines) {
-                let trimmed = line.trim();
-                if (trimmed === '') continue;
-                trimmed = trimmed.replace(/\s+/g, ' ');
-                addLogLine(trimmed);
-            }
+            
+            // HIỂN THỊ THÔNG BÁO TRONG KHUNG HÌNH ẢNH (iframe)
+            const graphFrame = document.getElementById('graph-iframe');
+            graphFrame.srcdoc = `<div style="padding:40px;text-align:center;background:#030712;height:100%;display:flex;align-items:center;justify-content:center;flex-direction:column;color:#a0aec0;font-family:system-ui">
+                <i class="fas fa-chart-simple" style="font-size:56px;margin-bottom:20px;opacity:0.7"></i>
+                <p style="font-weight:500; font-size:16px;">🖼️ Để xem lại đồ thị minh họa, vui lòng nhấn "GIẢI BÀI TOÁN" để chạy lại bài toán.</p>
+                <p style="font-size:12px; margin-top:10px;">Dữ liệu bài toán đã được khôi phục, chỉ cần nhấn nút giải</p>
+            </div>`;
+            
+            if(item.status) document.getElementById('primal-status').innerText = item.status;
+            if(item.z) document.getElementById('primal-z').innerText = item.z;
+            if(item.result) document.getElementById('primal-solution').innerHTML = convertToSubscript(item.result);
+            addLogLine(`📌 Bài toán: ${item.problem} | Kết quả: ${item.status} | Z = ${item.z}`,'success');
+            addLogLine(`💡 Gợi ý: Nhấn "GIẢI BÀI TOÁN" để xem lại đồ thị hình học.`,'info');
+        }
+        function clearHistory(){
+            if(confirm('Xóa toàn bộ lịch sử giải?')){ localStorage.removeItem('lp_history'); renderHistoryList(); addLogLine('🗑️ Đã xóa lịch sử giải','info'); }
         }
         
         // ========== ẨN/HIỆN KHUNG ĐỐI NGẪU ==========
         const methodSelect = document.getElementById('solution-method');
         const dualResultBox = document.getElementById('dual-result-box');
-        
-        function toggleDualPanel() {
-            if (methodSelect.value === 'duality') {
-                dualResultBox.classList.remove('hidden-panel');
-            } else {
-                dualResultBox.classList.add('hidden-panel');
-            }
-        }
-        
+        function toggleDualPanel() { methodSelect.value==='duality' ? dualResultBox.classList.remove('hidden-panel') : dualResultBox.classList.add('hidden-panel'); }
         methodSelect.addEventListener('change', toggleDualPanel);
         toggleDualPanel();
         
@@ -926,198 +856,96 @@
         function generateInputForm() {
             const numVars = parseInt(document.getElementById('num-vars').value) || 2;
             const numCons = parseInt(document.getElementById('num-constraints').value) || 2;
-            
             const objDiv = document.getElementById('objective-container');
             objDiv.innerHTML = '';
-            for (let j = 0; j < numVars; j++) {
-                objDiv.innerHTML += `
-                    <div class="flex items-center gap-1 bg-white/10 border border-white/20 px-2 py-1.5 rounded-xl shadow-sm">
-                        <input type="text" name="c${j}" value="" placeholder="c${j+1}" class="w-14 bg-transparent text-center font-bold focus:outline-none rounded-md">
-                        <span class="text-xs font-bold">x<sub>${j+1}</sub></span>
-                    </div>${j < numVars-1 ? '<span class="text-slate-400 font-black text-lg">+</span>' : ''}
-                `;
-            }
-            
+            for(let j=0;j<numVars;j++) objDiv.innerHTML += `<div class="flex items-center gap-1 bg-white/10 border border-white/20 px-2 py-1.5 rounded-xl shadow-sm"><input type="text" name="c${j}" placeholder="c${j+1}" class="w-14 bg-transparent text-center font-bold focus:outline-none rounded-md"><span class="text-xs font-bold">x<sub>${j+1}</sub></span></div>${j<numVars-1?'<span class="text-slate-400 font-black text-lg">+</span>':''}`;
             const consDiv = document.getElementById('constraints-container');
             consDiv.innerHTML = '';
-            for (let i = 0; i < numCons; i++) {
+            for(let i=0;i<numCons;i++){
                 let row = `<div class="flex flex-wrap items-center gap-2 p-3 rounded-xl bg-black/10 border border-white/10 backdrop-blur-sm">`;
-                for (let j = 0; j < numVars; j++) {
-                    row += `
-                        <div class="flex items-center gap-0.5 bg-white/5 border border-white/15 px-2 py-1 rounded-lg">
-                            <input type="text" name="A${i}_${j}" value="" placeholder="a${i+1}${j+1}" class="w-12 bg-transparent text-center font-bold focus:outline-none text-sm">
-                            <span class="text-[11px] font-bold">x<sub>${j+1}</sub></span>
-                        </div>${j < numVars-1 ? '<span class="text-xs font-bold">+</span>' : ''}
-                    `;
-                }
-                row += `
-                    <select name="constraint_type${i}" class="border rounded-lg px-2 py-1.5 text-xs font-bold mx-1 shadow-sm">
-                        <option value="&lt;=">&le;</option><option value="&gt;=">&ge;</option><option value="=">=</option>
-                    </select>
-                    <input type="text" name="b${i}" value="" placeholder="b${i+1}" class="w-16 border rounded-lg px-2 py-1.5 text-center font-bold focus:outline-none">
-                </div>`;
+                for(let j=0;j<numVars;j++) row += `<div class="flex items-center gap-0.5 bg-white/5 border border-white/15 px-2 py-1 rounded-lg"><input type="text" name="A${i}_${j}" placeholder="a${i+1}${j+1}" class="w-12 bg-transparent text-center font-bold focus:outline-none text-sm"><span class="text-[11px] font-bold">x<sub>${j+1}</sub></span></div>${j<numVars-1?'<span class="text-xs font-bold">+</span>':''}`;
+                row += `<select name="constraint_type${i}" class="border rounded-lg px-2 py-1.5 text-xs font-bold mx-1 shadow-sm"><option value="&lt;=">≤</option><option value="&gt;=">≥</option><option value="=">=</option></select><input type="text" name="b${i}" placeholder="b${i+1}" class="w-16 border rounded-lg px-2 py-1.5 text-center font-bold focus:outline-none"></div>`;
                 consDiv.innerHTML += row;
             }
-            
             const signsDiv = document.getElementById('variable-signs-container');
             signsDiv.innerHTML = '';
-            for (let j = 0; j < numVars; j++) {
-                signsDiv.innerHTML += `
-                    <div class="flex items-center justify-between p-2.5 rounded-xl bg-white/5 border border-white/10">
-                        <span class="font-extrabold text-sm">x<sub>${j+1}</sub></span>
-                        <select name="var_type${j}" class="border rounded-lg px-3 py-1.5 text-xs font-bold bg-opacity-90">
-                            <option value="không âm">✅ không âm (&ge;0)</option>
-                            <option value="không dương">⚠️ không dương (&le;0)</option>
-                            <option value="tự do">🌀 tự do</option>
-                        </select>
-                    </div>
-                `;
-            }
+            for(let j=0;j<numVars;j++) signsDiv.innerHTML += `<div class="flex items-center justify-between p-2.5 rounded-xl bg-white/5 border border-white/10"><span class="font-extrabold text-sm">x<sub>${j+1}</sub></span><select name="var_type${j}" class="border rounded-lg px-3 py-1.5 text-xs font-bold bg-opacity-90"><option value="không âm">✅ không âm (≥0)</option><option value="không dương">⚠️ không dương (≤0)</option><option value="tự do">🌀 tự do</option></select></div>`;
         }
-        
         document.getElementById('btn-generate').addEventListener('click', generateInputForm);
         window.addEventListener('DOMContentLoaded', generateInputForm);
         
-        // ========== LOG BUTTONS ==========
+        // ========== BUTTONS ==========
         document.getElementById('copy-log-btn').addEventListener('click', copyLog);
         document.getElementById('clear-log-btn').addEventListener('click', clearLog);
         document.getElementById('scroll-bottom-btn').addEventListener('click', scrollToBottom);
         
-        // ========== XỬ LÝ SUBMIT FORM ==========
+        // History dropdown
+        const historyBtn = document.getElementById('history-btn');
+        const historyMenu = document.getElementById('history-menu');
+        historyBtn.addEventListener('click',(e)=>{ e.stopPropagation(); historyMenu.classList.toggle('show'); renderHistoryList(); });
+        document.addEventListener('click',(e)=>{ if(!historyBtn.contains(e.target)) historyMenu.classList.remove('show'); });
+        
+        // ========== XỬ LÝ SUBMIT ==========
         const solveForm = document.getElementById('solve-form');
         const graphFrame = document.getElementById('graph-iframe');
-        
         const dualStatusSpan = document.getElementById('dual-status');
         const dualZSpan = document.getElementById('dual-z');
         const dualSolutionSpan = document.getElementById('dual-solution');
-        
         const primalStatusSpan = document.getElementById('primal-status');
         const primalZSpan = document.getElementById('primal-z');
         const primalSolutionSpan = document.getElementById('primal-solution');
         
-        function validateInputs() {
-            const allInputs = document.querySelectorAll('#solve-form input[type="text"]');
-            for (let input of allInputs) {
-                let val = input.value.trim();
-                if (val === '') continue;
-                const numberPattern = /^-?\d+(?:\.\d+)?(?:\/\d+(?:\.\d+)?)?$/;
-                if (!numberPattern.test(val)) {
-                    alert(`❌ Giá trị "${val}" không hợp lệ!\n\nChỉ chấp nhận:\n• Số nguyên: 3, -5\n• Số thập phân: 2.5, -3.14\n• Phân số: 1/3, -2/5`);
-                    input.focus();
-                    input.style.borderColor = '#ef4444';
-                    setTimeout(() => input.style.borderColor = '', 2000);
-                    return false;
-                }
-                input.style.borderColor = '';
-            }
-            
-            const numVars = parseInt(document.getElementById('num-vars').value);
-            const numCons = parseInt(document.getElementById('num-constraints').value);
-            if (isNaN(numVars) || numVars < 1 || numVars > 20) {
-                alert('Số biến phải từ 1 đến 20');
-                return false;
-            }
-            if (isNaN(numCons) || numCons < 1 || numCons > 50) {
-                alert('Số ràng buộc phải từ 1 đến 50');
-                return false;
-            }
-            return true;
+        function getProblemSummary() {
+            const objType = document.querySelector('select[name="objective_type"] option:checked').text;
+            return `${objType}, ${document.getElementById('num-vars').value} biến, ${document.getElementById('num-constraints').value} ràng buộc`;
         }
         
         solveForm.addEventListener('submit', async (e) => {
             e.preventDefault();
-            const formData = new FormData(solveForm);
-
-            if (!validateInputs()) return;
-            
             clearLog();
             addLogLine('🔄 [LinProSolv] Đang xử lý dữ liệu & chạy thuật toán đơn hình ...', 'info');
-            
-            dualStatusSpan.innerText = "Đang xử lý...";
-            dualZSpan.innerText = "...";
-            dualSolutionSpan.innerText = "...";
-            primalStatusSpan.innerText = "Đang xử lý...";
-            primalZSpan.innerText = "...";
-            primalSolutionSpan.innerText = "...";
-            
+            dualStatusSpan.innerText = "Đang xử lý..."; dualZSpan.innerText = "..."; dualSolutionSpan.innerText = "...";
+            primalStatusSpan.innerText = "Đang xử lý..."; primalZSpan.innerText = "..."; primalSolutionSpan.innerText = "...";
+            const formData = new FormData(solveForm);
             try {
-                const response = await fetch('/api/solve', {
-                    method: 'POST',
-                    body: formData
-                });
+                const response = await fetch('/api/solve', { method: 'POST', body: formData });
                 const data = await response.json();
                 if(data.success) {
                     const res = data.result;
-                    let dualSol = "---";
-                    let primalSol = "---";
-                    
-                    if(res.solution && typeof res.solution === 'object') {
-                        const dualItems = [];
-                        const primalItems = [];
-                        for (const [k, v] of Object.entries(res.solution)) {
-                            if (k.startsWith('y')) {
-                                dualItems.push(`${k}=${v}`);
-                            } else if (k.startsWith('x')) {
-                                primalItems.push(`${k}=${v}`);
-                            }
+                    let dualSol="---", primalSol="---";
+                    if(res.solution && typeof res.solution==='object'){
+                        let dualArr=[], primalArr=[];
+                        for(let [k,v] of Object.entries(res.solution)){
+                            if(k.startsWith('y')) dualArr.push(`${k}=${v}`);
+                            if(k.startsWith('x')) primalArr.push(`${k}=${v}`);
                         }
-                        if (dualItems.length > 0) dualSol = dualItems.join(', ');
-                        if (primalItems.length > 0) primalSol = primalItems.join(', ');
+                        if(dualArr.length) dualSol = dualArr.join(', ');
+                        if(primalArr.length) primalSol = primalArr.join(', ');
                     }
-                    
-                    let dualStat = "";
-                    let dualZ = res.z || "N/A";
-                    let primalStat = res.status || "Không xác định";
-                    let primalZ = res.z || "N/A";
-                    if (methodSelect.value === 'duality') {
-                        if (res.status === "Vô nghiệm") {
-                            dualStat = "Không giới nội (Unbounded)";
-                            if (document.querySelector('select[name="objective_type"]').value === 'max') {
-                                dualZ = "+∞";
-                            } else {
-                                dualZ = "-∞";
-                            }
-                        } else if (res.status === "Không giới nội") {
-                            dualStat = "Vô nghiệm (Infeasible)";
-                            dualZ = "Không xác định";
-                        } else if (res.status && (res.status.includes("Tối ưu"))) {
-                            dualStat = "Tối ưu (Optimal)";
-                        } else {
-                            dualStat = res.status || "Hoàn tất";
-                        }
-                        
+                    if(methodSelect.value==='duality'){
+                        let dualStat = (res.status==="Vô nghiệm")?"Không giới nội (Unbounded)":(res.status==="Không giới nội")?"Vô nghiệm (Infeasible)":(res.status && res.status.includes("Tối ưu"))?"Tối ưu (Optimal)":res.status||"Hoàn tất";
+                        let dualZVal = res.z||"N/A";
+                        if(res.status==="Vô nghiệm") dualZVal = (document.querySelector('select[name="objective_type"]').value==='max')?"+∞":"-∞";
                         dualStatusSpan.innerText = dualStat;
-                        dualZSpan.innerText = dualZ;
+                        dualZSpan.innerText = dualZVal;
                         dualSolutionSpan.innerHTML = convertToSubscript(dualSol);
                     }
-                    
-                    primalStatusSpan.innerText = primalStat;
-                    primalZSpan.innerText = primalZ;
+                    primalStatusSpan.innerText = res.status||"Tối ưu";
+                    primalZSpan.innerText = res.z||"---";
                     primalSolutionSpan.innerHTML = convertToSubscript(primalSol);
-                    
-                    if(res.plot_html) {
-                        graphFrame.srcdoc = res.plot_html;
-                    } else {
-                        graphFrame.srcdoc = `<div style="display:flex;align-items:center;justify-content:center;height:100%;background: #030712;color:#a0aec0;font-family:sans-serif;flex-direction:column;"><i class="fas fa-chart-simple" style="font-size:48px;opacity:0.6"></i><p>Đồ thị chỉ khả dụng với bài toán 2 biến</p></div>`;
-                    }
-                    
-                    if (res.raw_logs) {
-                        setRawLogs(res.raw_logs);
-                    } else {
-                        addLogLine('✅ Giải thành công!', 'success');
-                    }
-                } else {
-                    throw new Error(data.error || "Lỗi từ máy chủ");
-                }
-            } catch(err) {
-                console.error(err);
-                addLogLine(`❌ LỖI: ${err.message}`, 'error');
-                dualStatusSpan.innerText = "Lỗi";
-                dualZSpan.innerText = "---";
-                dualSolutionSpan.innerText = "---";
-                primalStatusSpan.innerText = "Lỗi";
-                primalZSpan.innerText = "---";
-                primalSolutionSpan.innerText = "---";
+                    if(res.plot_html) graphFrame.srcdoc = res.plot_html;
+                    else graphFrame.srcdoc = `<div style="display:flex;align-items:center;justify-content:center;height:100%;background:#030712;color:#a0aec0;font-family:sans-serif;flex-direction:column;"><i class="fas fa-chart-simple" style="font-size:48px;opacity:0.6"></i><p>Đồ thị chỉ khả dụng với bài toán 2 biến</p></div>`;
+                    let fullLogs = "";
+                    if(res.raw_logs){ setRawLogs(res.raw_logs); fullLogs = res.raw_logs; }
+                    else addLogLine('✅ Giải thành công!','success');
+                    const problemSummary = getProblemSummary();
+                    const currentForm = getCurrentFormData();
+                    saveToHistory(problemSummary, primalSol, res.status, res.z, currentForm, fullLogs);
+                } else throw new Error(data.error||"Lỗi từ máy chủ");
+            } catch(err){
+                addLogLine(`❌ LỖI: ${err.message}`,'error');
+                primalStatusSpan.innerText="Lỗi"; primalZSpan.innerText="---"; primalSolutionSpan.innerText="---";
+                if(methodSelect.value==='duality'){ dualStatusSpan.innerText="Lỗi"; dualZSpan.innerText="---"; dualSolutionSpan.innerText="---"; }
             }
         });
     </script>
