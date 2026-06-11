@@ -140,11 +140,13 @@ linprosolv/
 │   ├── solve_two_phase.py     # Thuật toán đơn hình hai pha
 │   ├── duality.py             # Giải bài toán bằng phương pháp đối ngẫu
 │   ├── plot_graph.py          # Vẽ đồ thị miền nghiệm khả thi
+│   ├── minhhoa3.png           # Ảnh minh họa 3 (chế độ sáng)
+│   ├── minhhoa5.png           # Ảnh minh họa 5 (chế độ tối)
 │   └── templates/
 │       └── index.html         # Giao diện người dùng
-├── requirements.txt           # Danh sách thư viện phụ thuộc
-├── render.yaml                # Cấu hình triển khai trên Render
-└── README.md                  # Tài liệu dự án
+├── requirements.txt
+├── render.yaml
+└── README.md
 ```
 
 ---
