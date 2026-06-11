@@ -28,7 +28,7 @@
 > Yêu cầu: Python 3.10+ (khuyến nghị 3.12).
 
 ```bash
-cd ban0406
+cd linprosolv-project
 pip install -r ../requirements.txt
 python app.py
 ```
@@ -39,7 +39,7 @@ Mở trình duyệt tại **http://127.0.0.1:2026**.
 
 ```
 .
-├── ban0406/
+├── linprosolv-project/
 │   ├── app.py               # Điểm vào Flask, route /api/solve, đọc & kiểm tra form
 │   ├── solve_two_phase.py   # Đơn hình 2 pha (Bland's rule)
 │   ├── duality.py           # Chuyển đổi & giải bài toán đối ngẫu
@@ -62,7 +62,7 @@ Dự án đã cấu hình sẵn cho **[Render](https://render.com)** qua file `r
 Lệnh chạy ở production:
 
 ```bash
-gunicorn --chdir ban0406 app:app
+gunicorn --chdir linprosolv-project app:app
 ```
 
 > Lưu ý: gói **free** của Render sẽ "ngủ" sau ~15 phút không truy cập, lần mở đầu tiên sau đó mất ~30 giây để khởi động lại.

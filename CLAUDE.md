@@ -6,14 +6,14 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 A Flask web app that solves Linear Programming (LP) problems and visualizes them.
 The UI and all comments/output are in **Vietnamese** — keep new strings in Vietnamese
-to stay consistent. All application code lives in the `ban0406/` subdirectory.
+to stay consistent. All application code lives in the `linprosolv-project/` subdirectory.
 
 ## Commands
 
-All commands run from `ban0406/`:
+All commands run from `linprosolv-project/`:
 
 ```powershell
-cd ban0406
+cd linprosolv-project
 pip install flask plotly numpy matplotlib   # no requirements.txt exists; these are the imports
 python app.py                               # serves on http://127.0.0.1:2026 (debug=True)
 ```
