@@ -104,6 +104,21 @@ python app.py
 ```
 👉 Mở trình duyệt: http://127.0.0.1:2026
 
+### 3️⃣ Tải từ Google Drive về chạy
+```bash
+# Tải source code từ Drive về
+# Sau đó làm theo các bước dưới đây:
+
+cd đường_dẫn_đến/linprosolv-project
+python -m venv venv
+venv\Scripts\activate  # Windows
+# hoặc
+source venv/bin/activate  # macOS/Linux
+
+pip install -r requirements.txt
+python app.py
+```
+
 # 📖 Hướng dẫn sử dụng
 
 | Bước | Thao tác                                                                                                                                                                         |
