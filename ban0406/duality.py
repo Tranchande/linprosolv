@@ -992,10 +992,13 @@ def solve_duality(c, A, b, constraint_types, method='max', var_signs=None):
          # Đóng gói kết quả - GỘP CẢ NGHIỆM GỐC (x) VÀ ĐỐI NGẪU (y)
     full_solution = {}
     
-    # Thêm nghiệm gốc (x) từ primal_solution
-    for k, v in primal_solution.items():
-        if k.startswith('x'):
-            full_solution[k] = str(v)
+    # Thêm nghiệm gốc (x) từ primal_solution.
+    # Lưu ý: ở các nhánh vô số nghiệm / không khôi phục được nghiệm duy nhất,
+    # primal_solution là một chuỗi mô tả (không phải dict) -> bỏ qua, chỉ hiển thị nghiệm đối ngẫu.
+    if isinstance(primal_solution, dict):
+        for k, v in primal_solution.items():
+            if k.startswith('x'):
+                full_solution[k] = str(v)
     
     # Thêm nghiệm đối ngẫu (y) từ dual_result_dict['solution'] (current_sol_dict)
     for k, v in dual_result_dict.get('solution', {}).items():
