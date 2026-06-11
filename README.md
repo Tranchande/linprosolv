@@ -40,6 +40,13 @@
 
 ---
 
+### Giao diện minh họa
+
+| Chế độ Sáng | Chế độ Tối |
+|:---:|:---:|
+| ![Chế độ sáng](minhhoa3.png) | ![Chế độ tối](minhhoa5.png) |
+
+---
 ## 🛠️ Công nghệ sử dụng
 
 ### 🔧 Backend (Python)
